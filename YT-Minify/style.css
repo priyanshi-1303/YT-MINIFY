@@ -1,0 +1,84 @@
+/* Hide sidebar when toggled */
+.hide-sidebar {
+  display: none;
+}
+
+/* Cursor pointer for clickable elements */
+.hamburger-icon,
+.search-button,
+.video-card {
+  cursor: pointer;
+}
+
+/* Small hover effect on video cards */
+.video-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+/* THEME TOGGLE BUTTON */
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #181818;
+  color: white;
+}
+
+.dark-mode .header,
+.dark-mode .sidebar {
+  background-color: #202020;
+}
+
+.dark-mode .video-title,
+.dark-mode .video-author,
+.dark-mode .video-stats {
+  color: white;
+}
+
+.dark-mode .search-box {
+  background-color: #121212;
+  color: white;
+  border: 1px solid #333;
+}
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Hide sidebar on mobile */
+  .sidebar {
+    display: none;
+  }
+
+  /* Header spacing */
+  .header {
+    padding: 8px 12px;
+  }
+
+  /* Search box smaller */
+  .search-box {
+    width: 140px;
+  }
+
+  /* Video grid -> single column */
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Video card spacing */
+  .video-card {
+    margin-bottom: 16px;
+  }
+
+  /* Hide some right section icons */
+  .youtube-container,
+  .notification-container {
+    display: none;
+  }
+}
